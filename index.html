@@ -28,7 +28,9 @@
       tailwind.config = {
         theme: {
           extend: {
-            colors: {},
+            colors: {
+              primaryColor: "#ABEF5F",
+            },
             fontFamily: {
               manrope: ["Manrope", "serif"],
             },
@@ -36,14 +38,80 @@
         },
       };
     </script>
-    <!-- <style>
-      .manrope {
-        font-family: "Manrope", serif;
-      }
-    </style> -->
   </head>
-  <body>
-    <header class="font-manrope">hello</header>
+  <body class="font-manrope">
+    <header class="lg:max-w-6xl mx-auto">
+      <!-- nav container -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div
+            class="w-6 h-6 rounded-full bg-primaryColor flex justify-center items-center"
+          >
+            <i class="fa-solid fa-arrow-right -rotate-45"></i>
+          </div>
+          <h3 class="text-2xl font-bold p-2">Rinterio</h3>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>Service</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end space-x-2">
+          <div
+            class="hidden w-10 h-10 md:flex rounded-full ml-3 items-center justify-center bg-slate-100"
+          >
+            <img class="w-5 h-5" src="assets/search.png" alt="" />
+          </div>
+          <div
+            class="hidden w-10 h-10 md:flex rounded-full items-center justify-center bg-slate-100"
+          >
+            <img class="w-5 h-5" src="assets/shopping.png" alt="" />
+          </div>
+          <div
+            class="hidden rounded-3xl w-40 py-2 bg-primaryColor md:flex justify-center gap-3"
+          >
+            <p class="">Book Consult</p>
+            <div
+              class="w-6 h-6 rounded-full bg-gray-900 flex justify-center items-center"
+            >
+              <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content lg:hidden bg-primaryColor rounded-md z-[1] mt-3 w-20 -left-8 shadow"
+          >
+            <li><a>Home</a></li>
+            <li><a>Service</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main></main>
     <footer></footer>
   </body>
