@@ -305,7 +305,48 @@
           sophistication, featuring weathered wood, sleek metal accents.
         </p>
         <!-- form container -->
-        <form action=""></form>
+        <div class="md:max-w-6xl md:mx-auto">
+          <form action="">
+            <!-- input container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+              <input
+                class="p-3 px-8 rounded-3xl text-gray-500 text-sm"
+                type="text"
+                placeholder="Last Name"
+              />
+              <input
+                class="p-3 px-8 rounded-3xl text-gray-500 text-sm"
+                type="text"
+                placeholder="First Name"
+              />
+              <input
+                class="p-3 px-8 rounded-3xl text-gray-500 text-sm"
+                type="text"
+                placeholder="Phone Number"
+              />
+              <input
+                class="p-3 px-8 rounded-3xl text-gray-500 text-sm"
+                type="text"
+                placeholder="Email Number"
+              />
+            </div>
+            <!-- input textarea -->
+            <textarea
+              class="w-full h-52 p-3 px-8 mt-10 rounded-3xl text-gray-500 text-sm"
+              placeholder="Enter Your Message Here"
+            ></textarea>
+            <button
+              class="mx-auto rounded-3xl w-full mt-5 py-2 bg-primaryColor flex justify-center gap-3"
+            >
+              <p class="">Send Mail</p>
+              <div
+                class="w-6 h-6 rounded-full bg-gray-900 flex justify-center items-center"
+              >
+                <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
+              </div>
+            </button>
+          </form>
+        </div>
       </div>
     </main>
     <footer></footer>
